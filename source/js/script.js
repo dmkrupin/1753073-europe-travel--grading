@@ -1,15 +1,8 @@
-const navMain = document.querySelector('.main-nav');
-const navToggle = document.querySelector('.main-nav__toggle');
+// import './swiper.js';
+import { setMainMenuState } from './main-menu.js';
 
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-  }
-});
+setMainMenuState();
+
 
 // const link = document.querySelector('.js-login');
 // const popup = document.querySelector('.modal');

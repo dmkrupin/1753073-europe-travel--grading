@@ -1,0 +1,61 @@
+.pricing {
+  .container();
+}
+
+.pricing__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: @darkgrey;
+  font: 600 24px/36px @montserrat;
+}
+
+.pricing__description {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+
+  font: 400 16px/27.2px @montserrat;
+  color: @darkgrey;
+  opacity: 0.7;
+}
+
+.pricing__contact-us {
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__contact-us-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font: 500 18px/34px @montserrat;
+  color: @dark;
+}
+
+.pricing__tel {
+  font: 400 18px/32px @montserrat;
+  color: @accent;
+  text-decoration: underline;
+
+  &:hover,
+  &:active {
+    color: @accent-active;
+  }
+}
+
+.pricing__tariff {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

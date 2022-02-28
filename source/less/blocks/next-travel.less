@@ -1,0 +1,44 @@
+.next-travel {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid @grey;
+}
+
+.next-travel__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    text-align: center;
+    font: 600 18px/32px @montserrat;
+    color: @dark;
+}
+
+.next-travel__routes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.next-travel__country-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.next-travel__country {
+    min-width: 134px;
+
+    text-align: center;
+    font: 400 14px/16.8px @montserrat;
+    color: @dark;
+    opacity: 0.5;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}

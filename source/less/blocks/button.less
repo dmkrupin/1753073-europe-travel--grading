@@ -1,33 +1,35 @@
 .button {
+  width: 288px;
+  box-sizing: border-box;
+  padding: 18px 40px;
+
   display: block;
-  padding-top: 13px;
-  padding-right: 29px;
-  padding-bottom: 11px;
-  padding-left: 29px;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
+  border: none;
+  background-color: @accent;
+
+  font: 500 10px/12px @montserrat;
   text-align: center;
-  color: #000000;
+  color: @white;
   text-transform: uppercase;
   text-decoration: none;
-  text-shadow: none;
-  background-color: transparent;
-  border: 1px solid #e5ddd5;
+  letter-spacing: 2px;
 
   &:hover {
     text-decoration: none;
-    border-color: #d5c9bd;
   }
 
   &:active {
-    color: fade(#000000, 30%);
     text-decoration: none;
-    background-color: #d5c9bd;
-    border-color: #d5c9bd;
+    background-color: @accent-active;
   }
 
   &:focus {
     text-decoration: none;
+  }
+
+  &--arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
   }
 }

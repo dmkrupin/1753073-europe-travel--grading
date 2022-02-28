@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>Путешествие по Европе</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Swiper bundle styles -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"> -->
+  <!-- Project CSS -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
@@ -20,10 +23,10 @@
     <div class="main-nav__menu">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">О путешествии</a>
+          <a class="main-nav__link" href="#places-to-visit">О путешествии</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Цены</a>
+          <a class="main-nav__link" href="#pricing">Цены</a>
         </li>
       </ul>  
     </div>
@@ -32,207 +35,540 @@
 </header>
 
 <main class="page-main">
-
-  <!-- <h1 class="visually-hidden">Барбершоп «Бородинский» — истинно мужская классика</h1>
-
-  <section class="stats">
-    <div class="stats__wrapper">
-      <header class="stats__header">
-        <h2 class="visually-hidden">
-          Статистика Барбершопа
-        </h2>
-        <p class="stats__slogan">
-          Стрижка у нас<br>
-          это выгодно!
-        </p>
-        <p class="stats__intro">
-          Мужская стрижка требует<br>
-          точного подхода. Обратимся<br>
-          к статистике:
-        </p>
-        <p class="stats__legend stats__legend--top">
-          <small>
-            * — приведённые данные ложь
-          </small>
-        </p>
-      </header>
-      <dl class="stats__list">
-        <div class="stats__item">
-          <dt class="stats__number">
-            1 500<sup>*</sup>
-          </dt>
-          <dd class="stats__description">
-            рублей<br>
-            вложений
-          </dd>
-        </div>
-        <div class="stats__item">
-          <dt class="stats__number">
-            7 200
-          </dt>
-          <dd class="stats__description">
-            секунд<br>
-            времени мастера
-          </dd>
-        </div>
-        <div class="stats__item">
-          <dt class="stats__number">
-            90 000
-          </dt>
-          <dd class="stats__description">
-            постриженных<br>
-            волос
-          </dd>
-        </div>
-        <div class="stats__item">
-          <dt class="stats__number">
-            500 000<sup>*</sup>
-          </dt>
-          <dd class="stats__description">
-            рублей<br>
-            вложений
-          </dd>
-        </div>
-      </dl>
-      <small class="stats__legend stats__legend--bottom">
-        * — приведённые данные ложь
-      </small>
-    </div>
-  </section>
-
-  <section class="advantages">
-    <div class="advantages__wrapper slider">
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul class="advantages__list slider__list">
-        <li class="advantages__item advantages__item--fast slider__item">
-          <h3 class="advantages__title">Быстро</h3>
-          <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки.</p>
-        </li>
-        <li class="advantages__item advantages__item--cool slider__item">
-          <h3 class="advantages__title">Круто</h3>
-          <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
-        </li>
-        <li class="advantages__item advantages__item--price slider__item">
-          <h3 class="advantages__title">Дорого</h3>
-          <p class="advantages__description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
-        </li>
-      </ul>
-      <p class="advantages__toggles slider__toggles">
-        <button class="slider__toggle slider__toggle--current" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+  <section class="main-header">
+    <div class="main-header__img-container"></div>
+    <div class="main-header__wrapper">
+      <h1 class="main-header__title">
+        Путешествие<br> по Европе
+      </h1>
+      <p class="main-header__description">
+        В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.
       </p>
+      <a href="" class="main-header__button button button--arrow">
+        <span>Cмотреть тур</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 1V15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M15 8L8 15L1 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
     </div>
   </section>
 
-  <section class="news">
-    <div class="news__wrapper">
-      <h2 class="news__title">Новости и акции</h2>
-      <div class="news__list">
-        <a class="news__item" href="#">
-          <time class="news__date" datetime="2017-09-29">
-            <b class="news__day">29</b> сент
-          </time>
-          <p class="news__text">Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
-        </a>
-        <a class="news__item" href="#">
-          <time class="news__date" datetime="2017-09-19">
-            <b class="news__day">19</b> сент
-          </time>
-          <p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец пополнил наши стройные ряды. Спешите записаться!</p>
-        </a>
-        <a class="news__item" href="#">
-          <time class="news__date" datetime="2017-09-09">
-            <b class="news__day">9</b> сент
-          </time>
-          <p class="news__text">Всё дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чём здесь подвох!</p>
-        </a>
-      </div>
-      <a class="news__to-all button" href="#">Показать все</a>
-    </div>
-  </section>
-
-  <section class="reviews">
-    <div class="reviews__wrapper slider">
-      <h2 class="reviews__title">Отзывы о нас</h2>
-      <a class="reviews__write button" href="form.html">Оставить свой</a>
-      <div class="reviews__list slider__list">
-        <blockquote class="reviews__item slider__item">
-          <picture class="reviews__author-picture">
-            <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-            <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x">
-            <img class="reviews__author-image" src="img/picture-travis-mobile@1x.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
-          </picture>
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Трэвис Баркер</cite>
-            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
-          </div>
-        </blockquote>
-        <blockquote class="reviews__item slider__item">
-          <picture class="reviews__author-picture">
-            <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-            <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x">
-            <img class="reviews__author-image" src="img/picture-travis-mobile@1x.jpg" width="50" height="33" alt="Фото Джона Смита">
-          </picture>
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Джон Смит</cite>
-            <p class="reviews__text">Отличную стрижку мне сделали ребята.</p>
-          </div>
-        </blockquote>
-        <blockquote class="reviews__item slider__item">
-          <picture class="reviews__author-picture">
-            <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-            <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x">
-            <img class="reviews__author-image" src="img/picture-travis-mobile@1x.jpg" width="50" height="33" alt="Фото Ивана Бородайло">
-          </picture>
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Иван Бородайло</cite>
-            <p class="reviews__text">В Бородинском ваша борода в надёжных руках!</p>
-          </div>
-        </blockquote>
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
-      </div>
-      <p class="reviews__toggles slider__toggles">
-        <button class="slider__toggle slider__toggle--current" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+  <section class="places-to-visit" id="places-to-visit">
+    <div class="places-to-visit__wrapper">
+      <h2 class="places-to-visit__title">Места посещения</h2>
+      <p class="places-to-visit__description">
+        Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
       </p>
+      <ul class="places-to-visit__list">
+        <li class="places-to-visit__item places-to-visit__item--greece">
+          <div class="places-to-visit__caption">
+            <span>Греция</span>
+          </div>
+        </li>
+        <li class="places-to-visit__item places-to-visit__item--albania">
+          <div class="places-to-visit__caption">
+            <span>Албания</span>
+          </div>
+        </li>
+        <li class="places-to-visit__item places-to-visit__item--macedonia">
+          <div class="places-to-visit__caption">
+            <span>Македония</span>
+          </div>
+        </li>
+        <li class="places-to-visit__item places-to-visit__item--montenegro">
+          <div class="places-to-visit__caption">
+            <span>Черногория</span>
+          </div>
+        </li>
+        <li class="places-to-visit__item places-to-visit__item--croatia">
+          <div class="places-to-visit__caption">
+            <span>Хорватия</span>
+          </div>
+        </li>
+      </ul>  
     </div>
   </section>
- -->
+
+  <section class="country-summary">
+    <section class="country-summary__swiper">
+      <div class="country-summary__list swiper-wrapper">
+        <div class="country-summary__swiper-slide country-summary__swiper-slide--active swiper-slide">
+          <a href="#greece" class="country-summary__link">Греция</a>
+        </div>
+        <div class="country-summary__swiper-slide swiper-slide">
+          <a href="#albania" class="country-summary__link">Албания</a>
+        </div>
+        <div class="country-summary__swiper-slide swiper-slide">
+          <a href="#macedonia" class="country-summary__link">Македония</a>
+        </div>
+        <div class="country-summary__swiper-slide swiper-slide">
+          <a href="#montenegro" class="country-summary__link">Черногория</a>
+        </div>
+        <div class="country-summary__swiper-slide swiper-slide">
+          <a href="#croatia" class="country-summary__link">Хорватия</a>
+        </div>
+      </div>
+    </section>
+    <section class="country-summary__info-list">
+      <div class="country-summary__info" id="greece">
+        <section class="country-summary__synopsis">
+          <h3 class="country-summary__title">Греция</h3>
+          <p class="country-summary__description">
+            На севере Греции находится один из крупнейших комплексов монастырей,
+              расположенных на вершинах скал. Название его «Метеора» буквально переводится
+              как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции.
+              После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров,
+              наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. 
+          </p>
+          <a class="country-summary__button button" href="#">купить тур сейчас</a>  
+        </section>
+
+        <section class="country-summary__reviews reviews">
+          <div class="reviews__img-container">
+            <div class="reviews__review">
+              <h4 class="reviews__title">Отзывы</h4>
+              <p class="reviews__text">
+                Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+                 Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах.
+                  Ощущение такое, как будто стоишь на краю света! 
+              </p>
+              <div class="reviews__author">
+                <a class="reviews__avatar">
+                  <img src="img/review-avatar.png" srcset="img/review-avatar@2x.png" width="38" height="38" alt="Влада Голицина">
+                </a>
+                <p class="reviews__name">Влада Голицина</p>
+              </div>
+            </div>  
+          </div>
+        </section>
+    
+        <section class="country-summary__pricing pricing" id="pricing">
+          <section class="pricing__info">
+            <h2 class="pricing__title">Цены</h2>
+            <p class="pricing__description">
+              Специально для Вас  мы разработали 2 пакета цен с разными условиями,
+               отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант
+                отпуска и отдохните на все 100%! 
+            </p>
+            <div class="pricing__contact-us">
+              <p class="pricing__contact-us-title">Свяжитесь с нами</p>
+              <a class="pricing__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+            </div>
+          </section>
+          <section class="pricing__tariff tariff tariff--preferred">
+            <h4 class="tariff__title">Комплексный</h4>
+            <h5 class="tariff__price">$1999</h5>
+            <p class="tariff__description">
+              Ознакомьтесь с перечнем того, что входит в данный пакет 
+            </p>
+            <ul class="tariff__keys-list">
+              <li class="tariff__keys-item">Разработанный маршрут с гидом группы</li>
+              <li class="tariff__keys-item">Перелет, трансфер и проживание в отелях</li>
+              <li class="tariff__keys-item">Завтраки, ужины в отелях и ланчи на природе</li>
+              <li class="tariff__keys-item">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a class="tariff__button button" href="#">купить тур сейчас</a>
+          </section>
+          <section class="pricing__tariff tariff">
+            <h4 class="tariff__title">Экономный</h4>
+            <h5 class="tariff__price">$1399</h5>
+            <p class="tariff__description">
+              Ознакомьтесь с перечнем того, что входит в данный пакет 
+            </p>
+            <ul class="tariff__keys-list">
+              <li class="tariff__keys-item">Разработанный маршрут с гидом группы</li>
+              <li class="tariff__keys-item">Перелет и трансфер</li>
+              <li class="tariff__keys-item">Проживание в хостелах при отелях</li>
+              <li class="tariff__keys-item">Только завтраки в отелях</li>
+              <li class="tariff__keys-item">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a class="tariff__button button" href="#">купить тур сейчас</a>
+          </section>
+        </section>      
+      </div>
+      <div class="country-summary__info" id="albania">
+        <section class="country-summary__synopsis">
+          <h3 class="country-summary__title">Греция</h3>
+          <p class="country-summary__description">
+            На севере Греции находится один из крупнейших комплексов монастырей,
+              расположенных на вершинах скал. Название его «Метеора» буквально переводится
+              как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции.
+              После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров,
+              наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. 
+          </p>
+          <a class="country-summary__button button" href="#">купить тур сейчас</a>  
+        </section>
+
+        <section class="country-summary__reviews reviews">
+          <div class="reviews__img-container">
+            <div class="reviews__review">
+              <h4 class="reviews__title">Отзывы</h4>
+              <p class="reviews__text">
+                Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+                 Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах.
+                  Ощущение такое, как будто стоишь на краю света! 
+              </p>
+              <div class="reviews__author">
+                <a class="reviews__avatar">
+                  <img src="img/review-avatar.png" srcset="img/review-avatar@2x.png" width="38" height="38" alt="Влада Голицина">
+                </a>
+                <p class="reviews__name">Влада Голицина</p>
+              </div>
+            </div>  
+          </div>
+        </section>
+    
+        <section class="country-summary__pricing pricing" id="pricing">
+          <section class="pricing__info">
+            <h2 class="pricing__title">Цены</h2>
+            <p class="pricing__description">
+              Специально для Вас  мы разработали 2 пакета цен с разными условиями,
+               отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант
+                отпуска и отдохните на все 100%! 
+            </p>
+            <div class="pricing__contact-us">
+              <p class="pricing__contact-us-title">Свяжитесь с нами</p>
+              <a class="pricing__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+            </div>
+          </section>
+          <section class="pricing__tariff tariff tariff--preferred">
+            <h4 class="tariff__title">Комплексный</h4>
+            <h5 class="tariff__price">$1999</h5>
+            <p class="tariff__description">
+              Ознакомьтесь с перечнем того, что входит в данный пакет 
+            </p>
+            <ul class="tariff__keys-list">
+              <li class="tariff__keys-item">Разработанный маршрут с гидом группы</li>
+              <li class="tariff__keys-item">Перелет, трансфер и проживание в отелях</li>
+              <li class="tariff__keys-item">Завтраки, ужины в отелях и ланчи на природе</li>
+              <li class="tariff__keys-item">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a class="tariff__button button" href="#">купить тур сейчас</a>
+          </section>
+          <section class="pricing__tariff tariff">
+            <h4 class="tariff__title">Экономный</h4>
+            <h5 class="tariff__price">$1399</h5>
+            <p class="tariff__description">
+              Ознакомьтесь с перечнем того, что входит в данный пакет 
+            </p>
+            <ul class="tariff__keys-list">
+              <li class="tariff__keys-item">Разработанный маршрут с гидом группы</li>
+              <li class="tariff__keys-item">Перелет и трансфер</li>
+              <li class="tariff__keys-item">Проживание в хостелах при отелях</li>
+              <li class="tariff__keys-item">Только завтраки в отелях</li>
+              <li class="tariff__keys-item">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a class="tariff__button button" href="#">купить тур сейчас</a>
+          </section>
+        </section>      
+
+      </div>
+      <div class="country-summary__info" id="macedonia">
+        <section class="country-summary__synopsis">
+          <h3 class="country-summary__title">Греция</h3>
+          <p class="country-summary__description">
+            На севере Греции находится один из крупнейших комплексов монастырей,
+              расположенных на вершинах скал. Название его «Метеора» буквально переводится
+              как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции.
+              После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров,
+              наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. 
+          </p>
+          <a class="country-summary__button button" href="#">купить тур сейчас</a>  
+        </section>
+
+        <section class="country-summary__reviews reviews">
+          <div class="reviews__img-container">
+            <div class="reviews__review">
+              <h4 class="reviews__title">Отзывы</h4>
+              <p class="reviews__text">
+                Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+                 Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах.
+                  Ощущение такое, как будто стоишь на краю света! 
+              </p>
+              <div class="reviews__author">
+                <a class="reviews__avatar">
+                  <img src="img/review-avatar.png" srcset="img/review-avatar@2x.png" width="38" height="38" alt="Влада Голицина">
+                </a>
+                <p class="reviews__name">Влада Голицина</p>
+              </div>
+            </div>  
+          </div>
+        </section>
+    
+        <section class="country-summary__pricing pricing" id="pricing">
+          <section class="pricing__info">
+            <h2 class="pricing__title">Цены</h2>
+            <p class="pricing__description">
+              Специально для Вас  мы разработали 2 пакета цен с разными условиями,
+               отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант
+                отпуска и отдохните на все 100%! 
+            </p>
+            <div class="pricing__contact-us">
+              <p class="pricing__contact-us-title">Свяжитесь с нами</p>
+              <a class="pricing__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+            </div>
+          </section>
+          <section class="pricing__tariff tariff tariff--preferred">
+            <h4 class="tariff__title">Комплексный</h4>
+            <h5 class="tariff__price">$1999</h5>
+            <p class="tariff__description">
+              Ознакомьтесь с перечнем того, что входит в данный пакет 
+            </p>
+            <ul class="tariff__keys-list">
+              <li class="tariff__keys-item">Разработанный маршрут с гидом группы</li>
+              <li class="tariff__keys-item">Перелет, трансфер и проживание в отелях</li>
+              <li class="tariff__keys-item">Завтраки, ужины в отелях и ланчи на природе</li>
+              <li class="tariff__keys-item">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a class="tariff__button button" href="#">купить тур сейчас</a>
+          </section>
+          <section class="pricing__tariff tariff">
+            <h4 class="tariff__title">Экономный</h4>
+            <h5 class="tariff__price">$1399</h5>
+            <p class="tariff__description">
+              Ознакомьтесь с перечнем того, что входит в данный пакет 
+            </p>
+            <ul class="tariff__keys-list">
+              <li class="tariff__keys-item">Разработанный маршрут с гидом группы</li>
+              <li class="tariff__keys-item">Перелет и трансфер</li>
+              <li class="tariff__keys-item">Проживание в хостелах при отелях</li>
+              <li class="tariff__keys-item">Только завтраки в отелях</li>
+              <li class="tariff__keys-item">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a class="tariff__button button" href="#">купить тур сейчас</a>
+          </section>
+        </section>      
+
+      </div>
+      <div class="country-summary__info" id="montenegro">
+        <section class="country-summary__synopsis">
+          <h3 class="country-summary__title">Греция</h3>
+          <p class="country-summary__description">
+            На севере Греции находится один из крупнейших комплексов монастырей,
+              расположенных на вершинах скал. Название его «Метеора» буквально переводится
+              как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции.
+              После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров,
+              наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. 
+          </p>
+          <a class="country-summary__button button" href="#">купить тур сейчас</a>  
+        </section>
+
+        <section class="country-summary__reviews reviews">
+          <div class="reviews__img-container">
+            <div class="reviews__review">
+              <h4 class="reviews__title">Отзывы</h4>
+              <p class="reviews__text">
+                Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+                 Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах.
+                  Ощущение такое, как будто стоишь на краю света! 
+              </p>
+              <div class="reviews__author">
+                <a class="reviews__avatar">
+                  <img src="img/review-avatar.png" srcset="img/review-avatar@2x.png" width="38" height="38" alt="Влада Голицина">
+                </a>
+                <p class="reviews__name">Влада Голицина</p>
+              </div>
+            </div>  
+          </div>
+        </section>
+    
+        <section class="country-summary__pricing pricing" id="pricing">
+          <section class="pricing__info">
+            <h2 class="pricing__title">Цены</h2>
+            <p class="pricing__description">
+              Специально для Вас  мы разработали 2 пакета цен с разными условиями,
+               отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант
+                отпуска и отдохните на все 100%! 
+            </p>
+            <div class="pricing__contact-us">
+              <p class="pricing__contact-us-title">Свяжитесь с нами</p>
+              <a class="pricing__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+            </div>
+          </section>
+          <section class="pricing__tariff tariff tariff--preferred">
+            <h4 class="tariff__title">Комплексный</h4>
+            <h5 class="tariff__price">$1999</h5>
+            <p class="tariff__description">
+              Ознакомьтесь с перечнем того, что входит в данный пакет 
+            </p>
+            <ul class="tariff__keys-list">
+              <li class="tariff__keys-item">Разработанный маршрут с гидом группы</li>
+              <li class="tariff__keys-item">Перелет, трансфер и проживание в отелях</li>
+              <li class="tariff__keys-item">Завтраки, ужины в отелях и ланчи на природе</li>
+              <li class="tariff__keys-item">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a class="tariff__button button" href="#">купить тур сейчас</a>
+          </section>
+          <section class="pricing__tariff tariff">
+            <h4 class="tariff__title">Экономный</h4>
+            <h5 class="tariff__price">$1399</h5>
+            <p class="tariff__description">
+              Ознакомьтесь с перечнем того, что входит в данный пакет 
+            </p>
+            <ul class="tariff__keys-list">
+              <li class="tariff__keys-item">Разработанный маршрут с гидом группы</li>
+              <li class="tariff__keys-item">Перелет и трансфер</li>
+              <li class="tariff__keys-item">Проживание в хостелах при отелях</li>
+              <li class="tariff__keys-item">Только завтраки в отелях</li>
+              <li class="tariff__keys-item">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a class="tariff__button button" href="#">купить тур сейчас</a>
+          </section>
+        </section>      
+
+      </div>
+      <div class="country-summary__info" id="croatia">
+        <section class="country-summary__synopsis">
+          <h3 class="country-summary__title">Греция</h3>
+          <p class="country-summary__description">
+            На севере Греции находится один из крупнейших комплексов монастырей,
+              расположенных на вершинах скал. Название его «Метеора» буквально переводится
+              как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции.
+              После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров,
+              наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. 
+          </p>
+          <a class="country-summary__button button" href="#">купить тур сейчас</a>  
+        </section>
+
+        <section class="country-summary__reviews reviews">
+          <div class="reviews__img-container">
+            <div class="reviews__review">
+              <h4 class="reviews__title">Отзывы</h4>
+              <p class="reviews__text">
+                Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+                 Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах.
+                  Ощущение такое, как будто стоишь на краю света! 
+              </p>
+              <div class="reviews__author">
+                <a class="reviews__avatar">
+                  <img src="img/review-avatar.png" srcset="img/review-avatar@2x.png" width="38" height="38" alt="Влада Голицина">
+                </a>
+                <p class="reviews__name">Влада Голицина</p>
+              </div>
+            </div>  
+          </div>
+        </section>
+    
+        <section class="country-summary__pricing pricing" id="pricing">
+          <section class="pricing__info">
+            <h2 class="pricing__title">Цены</h2>
+            <p class="pricing__description">
+              Специально для Вас  мы разработали 2 пакета цен с разными условиями,
+               отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант
+                отпуска и отдохните на все 100%! 
+            </p>
+            <div class="pricing__contact-us">
+              <p class="pricing__contact-us-title">Свяжитесь с нами</p>
+              <a class="pricing__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+            </div>
+          </section>
+          <section class="pricing__tariff tariff tariff--preferred">
+            <h4 class="tariff__title">Комплексный</h4>
+            <h5 class="tariff__price">$1999</h5>
+            <p class="tariff__description">
+              Ознакомьтесь с перечнем того, что входит в данный пакет 
+            </p>
+            <ul class="tariff__keys-list">
+              <li class="tariff__keys-item">Разработанный маршрут с гидом группы</li>
+              <li class="tariff__keys-item">Перелет, трансфер и проживание в отелях</li>
+              <li class="tariff__keys-item">Завтраки, ужины в отелях и ланчи на природе</li>
+              <li class="tariff__keys-item">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a class="tariff__button button" href="#">купить тур сейчас</a>
+          </section>
+          <section class="pricing__tariff tariff">
+            <h4 class="tariff__title">Экономный</h4>
+            <h5 class="tariff__price">$1399</h5>
+            <p class="tariff__description">
+              Ознакомьтесь с перечнем того, что входит в данный пакет 
+            </p>
+            <ul class="tariff__keys-list">
+              <li class="tariff__keys-item">Разработанный маршрут с гидом группы</li>
+              <li class="tariff__keys-item">Перелет и трансфер</li>
+              <li class="tariff__keys-item">Проживание в хостелах при отелях</li>
+              <li class="tariff__keys-item">Только завтраки в отелях</li>
+              <li class="tariff__keys-item">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a class="tariff__button button" href="#">купить тур сейчас</a>
+          </section>
+        </section>      
+
+      </div>
+    </section>
+  </section>
+
+  <section class="contacts">
+    <div class="contacts__wrapper">
+      <h2 class="contacts__title">У Вас остались вопросы?</h2>
+      <p class="contacts__description">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+      <form class="contacts__form">
+        <input class="contacts__tel" type="text" placeholder="+7  Введите 10 цифр номера">
+        <input class="contacts__email" type="email" placeholder="E-mail">
+        <button class="contacts__submit button" type="submit">отправить</button>
+      </form>
+    </div>
+  </section>
+
 </main>
 
 <footer class="page-footer">
-  <!-- <div class="page-footer__wrapper">
-    <div class="page-footer__contacts contacts">
-      <b class="contacts__title">Барбершоп «Бородинский»</b>
-      <p class="contacts__text">
-        г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
-        <a class="contacts__phone" href="tel:+78125556666">
-          <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
-        </a>
-      </p>
+  <section class="page-footer__next-travel next-travel">
+    <h4 class="next-travel__title page-footer__title">Следующие путешествия</h4>
+    <div class="next-travel__routes">
+      <section class="next-travel__route">
+        <ul class="next-travel__country-list">
+          <li class="next-travel__country">Марсель</li>
+          <li class="next-travel__country">Ним</li>
+          <li class="next-travel__country">Монпелье</li>
+          <li class="next-travel__country">Барселона</li>
+          <li class="next-travel__country">Пальма</li>
+        </ul>
+      </section>
+      <section class="next-travel__route">
+        <ul class="next-travel__country-list">
+          <li class="next-travel__country">Сардиния</li>
+          <li class="next-travel__country">Палермо</li>
+          <li class="next-travel__country">Катания</li>
+          <li class="next-travel__country">Неаполь</li>
+          <li class="next-travel__country">Рим</li>
+        </ul>
+      </section>
+      <section class="next-travel__route">
+        <ul class="next-travel__country-list">
+          <li class="next-travel__country">Корс</li>
+          <li class="next-travel__country">Ницца</li>
+          <li class="next-travel__country">Монако</li>
+          <li class="next-travel__country">Динь-ле-Бен</li>
+          <li class="next-travel__country">Гренобль</li>
+        </ul>
+      </section>  
     </div>
-    <div class="page-footer__social social">
-      <b class="social__title">Давайте дружить!</b>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    </div>
-  </div> -->
+  </section>
+  <section class="page-footer__write-to-us write-to-us">
+    <h4 class="write-to-us__title page-footer__title">Наши контакты</h4>
+    <p class="write-to-us__email">
+      <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24.2273 0H1.77273C0.768182 0 0 0.764706 0 1.76471V18.2353C0 19.2353 0.768182 20 1.77273 20H24.2273C25.2318 20 26 19.2353 26 18.2353V1.76471C26 0.764706 25.2318 0 24.2273 0ZM24.2273 17L19.5591 12.3529C19.2045 12 18.6727 12 18.3182 12.3529C17.9636 12.7059 17.9636 13.2353 18.3182 13.5882L22.9864 18.2353H3.01362L7.68182 13.5882C8.03636 13.2353 8.03636 12.7059 7.68182 12.3529C7.32727 12 6.79547 12 6.44092 12.3529L1.77273 17V5.70585L12.4091 13.7059C12.5864 13.8236 12.7636 13.8823 12.9409 13.8823C13.1182 13.8823 13.2954 13.8236 13.4727 13.7059L24.2273 5.70585V17ZM24.2273 1.76471V3.4706L12.9409 11.8235L1.77273 3.4706V1.76471H24.2273Z" fill="#D7D9DF"/>
+      </svg>
+      <span>puteshestviemechta@gmail.ru</span>
+    </p>
+    <p class="write-to-us__tel">
+      <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.39659 6.62432C1.31203 5.42623 1.57777 4.24606 2.28139 3.29684C2.89139 2.43632 3.6856 1.96636 4.64288 1.69172C5.44917 1.4525 5.97764 1.74561 6.21017 2.64204C6.54235 3.98224 7.01647 5.3225 7.1886 6.73361C7.24296 7.35485 6.84132 8.23322 6.40647 8.6856C5.31632 9.75888 5.54281 10.5399 6.37024 12.1643C6.62693 12.6881 7.03461 13.5934 7.82882 14.7919C8.65626 15.9992 9.09413 16.6472 10.1571 16.0975C11.3379 15.5035 12.1985 15.8855 13.0893 16.8444C13.6933 17.5369 14.3577 18.1318 14.9616 18.8243C15.8344 19.8542 15.7951 20.5641 15.1126 21.2915C13.8836 22.6309 11.8543 23.0736 10.3444 22.1766C9.51088 21.6881 8.68043 21.0487 8.01909 20.303C5.10496 16.9825 3.00315 13.1212 1.73784 8.76321C1.53551 8.02654 1.44189 7.28104 1.39659 6.62432Z" stroke="#D7D9DF" stroke-width="2" stroke-miterlimit="10"/>
+      </svg>
+      <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+    </p>
+  </section>
+
+  <section class="page-footer__corporate-travel corporate-travel">
+    <h4 class="corporate-travel__title page-footer__title">Корпоративные путешествия</h4>
+    <p class="corporate-travel__description">
+      Также вы можете заказать индивидуальное путешествие под вашу компанию.
+       Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух,
+        а также являются оличным времяпрепровождением
+    </p>
+  </section>
 </footer>
 
 <section class="modal">
@@ -262,7 +598,7 @@
   </form> -->
 </section>
 
-<script src="js/script.js"></script>
+<script src="js/script.js" type="module"></script>
 
 </body>
 </html>

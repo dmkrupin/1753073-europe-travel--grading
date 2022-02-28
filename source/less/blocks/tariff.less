@@ -1,0 +1,126 @@
+.tariff {
+    min-height: 629px;
+    padding: 29px 0 0;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid fade(@darkgrey, 30%);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.tariff__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 19px;
+    margin-right: 19px;
+
+    text-align: center;
+    font: 600 24px/38px @montserrat;
+    color: @dark;
+    letter-spacing: -1.27px;
+    opacity: 0.7;
+}
+
+.tariff__price {
+    margin-top: 0;
+    margin-bottom: 11px;
+    margin-left: 19px;
+    margin-right: 19px;
+
+    text-align: center;
+    font: 700 25px/34px @montserrat;
+    color: @dark;
+    opacity: 0.7;
+}
+
+.tariff__description {
+    padding: 0 0 10px;
+    margin: 0 19px 20px;
+
+    text-align: center;
+    font: 400 16px/24px @montserrat;
+    color: @darkgrey;
+    
+    border-bottom: 1px solid fade(@darkgrey, 30%);
+}
+
+.tariff__keys-list {
+    margin: 0 19px;
+    padding: 0;
+    list-style: none;
+}
+
+.tariff__keys-item {
+    position: relative;
+    margin-left: 30px;
+
+    font: 400 16px/32px @montserrat;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 14px;
+        height: 12px;
+        background-image: url('../img/icon-checkmark-normal.svg');
+        background-repeat: no-repeat;
+        background-size: 14px 12px;
+        position: absolute;
+        top: 10px;
+        left: -30px;
+
+    }
+}
+
+.tariff__button {
+    margin-top: auto;
+    width: 286px;
+}
+
+.tariff--preferred {
+
+    padding: 27px 0 0;
+    border: 3px solid @accent;
+
+    & .tariff__title {
+        margin-left: 17px;
+        margin-right: 17px;
+    
+        color: @accent;
+        opacity: 1;
+        letter-spacing: 0;
+    }
+
+    & .tariff__price {
+        margin-left: 17px;
+        margin-right: 17px;
+
+        color: @accent;
+        opacity: 1;
+    }
+
+    & .tariff__description {
+        margin: 0 17px 20px;
+
+        border-bottom: 1px solid @accent;
+    }
+
+    & .tariff__keys-list {
+        margin: 0 17px;
+    }
+
+    & .tariff__keys-item::before {
+        background-image: url('../img/icon-checkmark-preferred.svg');
+    }
+
+    & .tariff__button {
+        width: 282px;
+    } 
+}

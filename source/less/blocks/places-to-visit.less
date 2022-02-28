@@ -1,0 +1,94 @@
+.places-to-visit__wrapper {
+    .container();
+    margin-bottom: 40px;
+}
+.places-to-visit__title {
+    margin-bottom: 20px;
+
+    color: @darkgrey;
+    text-align: center;
+    font: 600 24px/36px @montserrat;
+}
+
+.places-to-visit__description {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    color: @darkgrey;
+    opacity: 0.7;
+    text-align: center;
+    font: 400 16px/27px @montserrat;
+    letter-spacing: -0.47px;
+}
+.places-to-visit__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.places-to-visit__item {
+    position: relative;
+    height: 425px;
+
+    background-color: @white;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:not(:last-child) {
+        margin-bottom: 35px;
+    }
+
+    &--greece {
+        background-image: url('../img/greece-bg-mobile.jpg');
+
+        @media (min-resolution: 2dppx) {
+            background-image: url('../img/greece-bg-mobile@2x.jpg');
+        }    
+    }
+    &--albania {
+        background-image: url('../img/albania-bg-mobile.jpg');
+
+        @media (min-resolution: 2dppx) {
+            background-image: url('../img/albania-bg-mobile@2x.jpg');
+        }    
+    }
+    &--macedonia {
+        background-image: url('../img/macedonia-bg-mobile.jpg');
+
+        @media (min-resolution: 2dppx) {
+            background-image: url('../img/macedonia-bg-mobile@2x.jpg');
+        }    
+    }
+    &--montenegro {
+        background-image: url('../img/montenegro-bg-mobile.jpg');
+
+        @media (min-resolution: 2dppx) {
+            background-image: url('../img/montenegro-bg-mobile@2x.jpg');
+        }    
+    }
+    &--croatia {
+        background-image: url('../img/croatia-bg-mobile.jpg');
+
+        @media (min-resolution: 2dppx) {
+            background-image: url('../img/croatia-bg-mobile@2x.jpg');
+        }    
+    }
+}
+.places-to-visit__caption {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+
+    background-color: @white;
+    width: 215px;
+    height: 62px;
+
+    font: 500 24px/30px @montserrat;
+    letter-spacing: -0.41px;
+
+    & span {
+        margin: auto;
+    }
+}
